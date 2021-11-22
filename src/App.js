@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Sidebar from './Components/Sidebar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './Components/Pages/Home';
 import About from './Components/Pages/About';
 import Team from './Components/Pages/Team';
@@ -12,14 +12,15 @@ function App() {
     <>
       <Router>
         <Sidebar />
-        <Routes>
+        <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/about' component={About} />
           <Route path='/team' component={Team} />
           <Route path='/support' component={Support} />
-        </Routes>
+        </Switch>
       </Router>
     </>
+    
   );
 }
 
