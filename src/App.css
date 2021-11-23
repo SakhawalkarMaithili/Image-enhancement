@@ -8,9 +8,8 @@
 }
 
 .home,
-.about, 
-.support, 
-.team {
+.reports,
+.products {
   display: flex;
   height: 90vh;
   align-items: center;
